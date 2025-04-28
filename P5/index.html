@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forcastly - Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="logo"><img src="icon.svg" alt="">Forecastly</a>
+        <div class="container">
+            <span class="material-symbols-outlined close">close</span>
+            <div class="navitem">
+                <!-- <a href="#" class="logo"><img src="icon.svg" alt="">Forecastly</a> -->
+                <ul class="mainnavitem">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Usage App</li>
+                    <li class="navitem dropdown">Dropdown<span class="material-symbols-outlined">arrow_drop_down</span>
+                        <ul class="dropdownmenu">
+                            <li class="dropdownitem">Action</li>
+                            <li class="dropdownitem">Another action</li>
+                            <div class="dropdowndivider"></div>
+                            <li class="dropdownitem">Something else here</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="searchitem">
+                <input id="city" type="text" class="search" placeholder="Search">
+                <button class="btn" id="submit">Search</button>
+            </div>
+        </div>
+        <span class="material-symbols-outlined hamburger">menu</span>
+    </nav>
+    <div class="container2">
+        <div class="about">
+            <p style="font-family: Playwrite MX, cursive;font-weight: 900;">Welcome !! </p>To our Weather Forecast Web App! This application is designed to provide users with accurate and up-to-date weather information in an intuitive and user-friendly interface. Whether you’re planning your day, preparing for a trip, or simply curious about the weather, our app has got you covered.
+        </div>
+        <h1 class="cityname">Weather for <span id="cityName"></span></h1>
+        <div class="boxes flex justify-center">
+            <div class="box">
+                <h2>Temperature</h2>
+                <ul>
+                    <li class="highlighted"><img width="80px" src="temp.svg" alt=""></li>
+                    <li>Temperature is <span id="temp_c"></span></li>
+                    <li>Feels Like is <span id="feelslike_c"></span></li>
+                    <li>UV intensity is <span id="uv"></span></li>
+                    <li><button class="btn2">Show more</button></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Cloud</h2>
+                <ul>
+                    <li class="highlighted"><img width="80px" id="weather-icon" src="cloud.svg" alt=""></li>
+                    <li>Cloud is <span id="cloud"></span></li>
+                    <li>Humidity is <span id="humidity"></span></li>
+                    <li>Pressure is <span id="pressure_in"></span></li>
+                    <li><button class="btn2">Show more</button></li>
+                </ul>
+            </div>
+            <div class="box">
+                <h2>Wind Info</h2>
+                <ul>
+                    <li class="highlighted"><img width="80px" src="windy.svg" alt=""></li>
+                    <li>Wind direction is <span id="wind_dir"></span></li>
+                    <li>Wind deg is <span id="wind_degree"></span></li>
+                    <li>Wind Speed is <span id="wind_kph"></span></li>
+                    <li><button class="btn2">Show more</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="Footer">
+            &copy;2024 Forecastly. All rights are reserved
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

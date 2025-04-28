@@ -1,0 +1,8 @@
+cloud.innerHTML = response.cloud 
+feelslike_c.innerHTML = response.feelslike_c 
+humidity.innerHTML = response.humidity 
+pressure_in.innerHTML = response.pressure_in 
+temp_c.innerHTML = response.temp_c 
+uv.innerHTML = response.uv 
+wind_degree.innerHTML = response.wind_degree 
+wind_dir.innerHTML = response.wind_dir 

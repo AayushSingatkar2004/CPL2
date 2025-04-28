@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    width: -webkit-fill-available;
+    padding: 13px;
+    display: flex;
+    background-color: whitesmoke;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 1.3rem;
+    font-family: "Playwrite MX", cursive;
+    margin-right: 24px;
+}
+
+.close{
+    position: absolute;
+    visibility: hidden;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: whitesmoke;
+}
+
+.navitem {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.mainnavitem {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.mainnavitem li {
+    padding: 8px 15px;
+}
+
+.mainnavitem li:hover {
+    background-color: rgb(226, 226, 226);
+    border-radius: 15px;
+}
+
+.navitem ul li {
+    cursor: pointer;
+}
+
+.dropdownmenu {
+    visibility: hidden;
+    padding: 10px 0;
+    position: absolute;
+    top: 54px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid whitesmoke;
+    border-radius: 8px;
+    list-style: none;
+}
+
+.dropdownmenu li:hover {
+    background-color: whitesmoke;
+    border-radius: 0px;
+}
+
+.dropdownitem {
+    padding: 8px 16px;
+}
+
+.dropdowndivider {
+    margin: 8px 0px;
+    background-color: rgb(224, 224, 224);
+    height: 2px;
+}
+
+.btn {
+    background-color: #ffd60a;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.btn:hover {
+    background-color: #e6c000;
+}
+
+.searchitem {
+    /* position: absolute;
+    right: 20px; */
+    display: flex;
+    gap: 8px;
+}
+
+.search {
+    width: 24vw;
+    padding: 8px;
+    outline: none;
+    border-radius: 8px;
+    border: none;
+    border: 1.8px solid rgb(147, 147, 147);
+}
+
+.hamburger {
+    opacity: 0;
+    /* visibility: hidden; */
+}
+
+.boxes {
+    /* overflow-x: scroll; */
+    padding: 10px 10px 75px 10px;
+}
+
+.box {
+    padding: 8px 0;
+    margin: 12px 22px;
+    min-width: 20vw;
+    border: 2px solid rgb(147, 147, 147);
+    background-color: rgb(211, 242, 254);
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    word-wrap: break-word;
+    transition: box-shadow 0.3s ease;
+}
+
+/* .box:hover {
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
+} */
+
+.box .btn:hover {
+    background-color: #e89281;
+}
+
+.highlighted {
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+.box ul {
+    list-style: none;
+}
+
+.box h2 {
+    padding: 15px 0px 4px 0;
+}
+
+.box ul li {
+    margin: 12px 2px;
+    font-size: 18px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.my-2 {
+    margin-top: 26px;
+    margin-bottom: 26px;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.flex {
+    display: flex;
+}
+
+.plantable {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section3 table {
+    width: 100%;
+    margin-bottom: 140px;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+.section3 table th {
+    width: 23vw;
+    border-bottom: 2px solid black;
+    padding: 15px 0;
+}
+
+.section3 table td {
+    border-bottom: 2px solid black;
+}
+
+
+.section3 h1 {
+    font-size: 2.3rem;
+}
+
+.section3 {
+    padding: 65px;
+}
+
+.cityname {
+    margin: 28px 0;
+    text-align: center;
+}
+
+.btn2 {
+    padding: 10px 16px;
+    background-color: #ffd60a;
+    border:2px solid #ffe877;
+    border-radius: 2rem;
+    color: white;
+    font-weight: bolder;
+}
+
+.btn2:hover{
+    background-color: #e6c000;
+    border:2px solid #ffe877;
+}
+
+.about{
+    margin: 102px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Playwrite MX", cursive;
+}
+
+.container2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Footer{
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+    font-weight: 500;
+}
+
+@media (max-width:550px) {
+    .boxes {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .box{
+        width: 80vw;
+    }
+}
+
+@media (max-width:950px) {
+    .hamburger {
+        opacity: 1;
+    }
+
+    .navitem {
+        flex-direction: column;
+    }
+
+    .mainnavitem {
+        flex-direction: column;
+    }
+
+    .btn{
+        margin: 0 10px;
+        padding: 5px 0;
+    }
+
+    .container {
+        top: -310px;
+        position: absolute;
+        right: 12px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: whitesmoke;
+        border: 2px solid gray;
+        width: fit-content;
+        padding: 20px;
+        transition: all 1s;
+        border-radius: 10px;
+        padding-bottom: 10px;
+    }
+    
+
+    .container .close {
+        visibility: visible;
+        left: 14px;
+        position: absolute;
+        top: 12px;
+    }
+
+    .search {
+        width: fit-content;
+    }
+
+    .dropdownmenu {
+        top: 126px;
+        left: -188px;
+        transition: all;
+    }
+
+    .searchitem {
+        flex-direction: column;
+    }
+
+    .navbar {
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .plantable {
+        justify-content: flex-start;
+        overflow-x: scroll;
+    }
+    .section3{
+        padding: 32px;
+    }
+    .section3 table th {
+        padding: 15px 12px;
+    }
+}
